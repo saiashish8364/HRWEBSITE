@@ -35,12 +35,12 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-12 mr-40">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               to={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300 relative group"
+              className="text-l font-medium text-foreground/70 hover:text-primary transition-colors duration-300 relative group"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300" />
@@ -49,11 +49,11 @@ export function Header() {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:flex items-center gap-4">
+        {/* <div className="hidden md:flex items-center gap-4">
           <button className="px-6 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
             Get Started
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Toggle */}
         <button
@@ -82,9 +82,9 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <button className="w-full px-6 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:shadow-lg transition-all duration-300 mt-4">
+            {/* <button className="w-full px-6 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:shadow-lg transition-all duration-300 mt-4">
               Get Started
-            </button>
+            </button> */}
           </div>
         </div>
       )}
