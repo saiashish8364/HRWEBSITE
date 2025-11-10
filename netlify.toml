@@ -1,3 +1,5 @@
+# Netlify configuration (optional for Vercel deployments)
+# This is kept for reference but Vercel will ignore it
 [build]
   command = "npm run build"
   publish = "dist"
